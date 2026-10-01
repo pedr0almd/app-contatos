@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://api-contatos-auth-04-09-25.onrender.com';
 
 const api = axios.create({ baseURL: BASE_URL });
 

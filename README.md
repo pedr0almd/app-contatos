@@ -22,10 +22,14 @@ Antes de testar, suba a **API v2** com estas rotas:
 
 ## BASE_URL
 
-Fica em `lib/api.ts`. Hoje esta fixa no IP do PC na LAN (`http://192.168.18.223:3000`),
-que e a estrategia (A) do guia e funciona em celular fisico via Expo Go.
+Fica em `lib/api.ts`. Hoje aponta para a API publicada no Render
+(`https://api-contatos-auth-04-09-25.onrender.com`), que funciona igual em
+celular fisico, emulador, simulador e Web.
 
-Se trocar de rede ou de alvo, ajuste conforme a plataforma:
+No plano gratuito do Render a API hiberna quando fica parada, entao a primeira
+requisicao pode levar uns 30 a 60 segundos.
+
+Para usar uma API local, troque a URL conforme a plataforma:
 
 | Onde roda | URL |
 | --- | --- |
